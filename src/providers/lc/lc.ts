@@ -13,8 +13,8 @@ import { Jsonp } from '@angular/http';
 
 @Injectable()
 export class LcProvider {
-  apikey = '206a9e4d19560528';
-  url2;
+ // apikey = 'YOUR KEY HERE';
+ // url2;
  private url:string;
   constructor(private jsonp:Jsonp) {
    this.url = 'http://autocomplete.wunderground.com/aq?query=';
