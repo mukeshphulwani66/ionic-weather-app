@@ -1,0 +1,48 @@
+<!--
+  Generated template for the SettingsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Select City</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="setting1">
+<ion-grid>
+  <ion-row>
+    <ion-col>
+      <ion-list>
+        <form (ngSubmit)="saveForm()">
+          <ion-item>
+            <ion-label>City : </ion-label>"
+            <ion-input [(ngModel)]="city" name="city" type="text" (keyup)=displayval($event)></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label>Country/State(optional): </ion-label>"
+            <ion-input [(ngModel)]="state" name="state" type="text"></ion-input>
+          </ion-item>
+          <button ion-button type="submit" block>Save Changes</button>
+          <div id ="dishere">
+            <ion-list>
+              <ion-item class="hvr" (click)=writecity(0)>{{cityd[0]}}</ion-item>
+              <ion-item class="hvr" (click)=writecity(1)>{{cityd[1]}}</ion-item>
+              <ion-item class="hvr" (click)=writecity(2)>{{cityd[2]}}</ion-item>
+              <ion-item class="hvr" (click)=writecity(3)>{{cityd[3]}}</ion-item>
+              <ion-item class="hvr" (click)=writecity(4)>{{cityd[4]}}</ion-item>
+              <ion-item class="hvr" (click)=writecity(5)>{{cityd[5]}}</ion-item>
+              <ion-item class="hvr" (click)=writecity(6)>{{cityd[6]}}</ion-item>
+            </ion-list>
+          </div>
+
+        </form>
+      </ion-list>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+</ion-content>

@@ -1,8 +1,14 @@
 {
   "name": "weather-app",
-  "app_id": "",
+  "app_id": "ion.phulwanisapp.weather",
   "type": "ionic-angular",
   "integrations": {
     "cordova": {}
-  }
+  },
+  "proxies": [
+    {
+      "path": "/api",
+      "proxyUrl": "http://autocomplete.wunderground.com/*"
+    }
+  ]
 }
